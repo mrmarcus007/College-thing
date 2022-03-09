@@ -14,16 +14,25 @@ href="style.css">
     <h3>so this website is meant to be be about me..... I like..... </h3> 
     
     <h3><p style="color:rgb(252, 63, 6)">computers, games, digital art, wasting my life, virtual photography and *censored*</p></h3>
-    <h4>the render is mine</h4>
+    <h4>the render is mine, it was made in unreal 5 using lumen, nanite and metahuman.</h4>
 
-    <img width="303.75" height="540" text-align="centre" src="NewLevelSequence0001.jpeg">
+     <div>
+    <img width="768" height="432" text-align="centre" src="Anita's introduction.jpeg">
+     </div>
 
+     <div>
    <body> <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </body>
+     </div>
 
      <body>
       <button onclick="myFunction()" button>
-     <h1>click me</h1>
+     <h1>cool button</h1>
      </body>
+
+     <body>
+          <button onclick="getLocation()" button>
+         <h1>cooler button</h1>
+         </body>
 </html>
 
 <script>
@@ -31,3 +40,21 @@ href="style.css">
           alert ("I am a box that alerts");
      }
     </script>
+
+<p id="demo"></p>
+
+<script>
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
